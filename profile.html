@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Your Name - ptotfolio</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: antiquewhite;
+            }
+
+            .header-content {
+                background-color: blue;
+                color: rgb(0, 0, 0);
+                text-align: center;
+                position: relative;
+            }
+
+            .header-content h1 {
+                font-size: 1rem;
+            }
+
+            .profile-picture {
+                width: 50px;
+                height: 50px;
+                border-radius: 75%;
+                object-fit: cover;
+                position: absolute;
+                top: 5px;
+                left: 75px;
+            }
+
+            nav {
+                background-color: brown;
+                color: black;
+                text-align: center;
+            }
+
+            nav ul {
+                list-style-type: decimal;
+                padding: 0;
+            }
+
+            nav ul li {
+                display: inline;
+                margin: 0;
+            }
+
+            nav ul li a {
+                text-decoration: none;
+                color: black;
+            }
+
+            .section-content {
+                background-color: rgb(49, 226, 43);
+                padding: 0;
+                margin: 0.5;
+                border-radius: 5px;
+                box-shadow: 0 0 10px rgb(red, green, blue);
+            }
+
+            .download-button {
+                background-color: brown;
+                color: black;
+                padding: 0 ;
+                text-decoration: none;
+                border-radius: 10px;
+                display: inline-block;
+                margin-top: 10px;
+            }
+
+            .download-button:hover {
+                background-color: aqua;
+            }
+
+            footer {
+                text-align: center;
+                padding: 0;
+                background-color: blueviolet;
+                color: black;
+            }
+
+            ul {
+                list-style-type: disc;
+                padding-left: 10px;
+            }
+        </style>
+    </head>
+    <body background="harsh.png">
+        <header>
+            <div class="header-content">   
+            <img src="image.png" alt="your profile picture" class="profile-picture">
+            <h1>HARINI ANNADHRAI</h1>
+            <P> Passionate On Studying</P>
+            </div>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#achievement">Achievement</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="project">project</a></li>
+                <li><a href="resume">Resume</a></li>
+            </ul>
+        </nav>
+
+        <section id="About">
+                <div class="section-content">
+                <h5>About Me</h5>
+                <p>Hi, everyone! this is Harini annadhurai, computer application student.</p>
+            </div>
+        </section>
+
+        <sectionid="Education">
+            <div class="section-content">
+                <h5>BCA.</h5>
+                <p>BARATHIDHASAN UNIVERSITY.</p>
+            </div>
+        </section>
+
+        <section id="Achievement">
+            <div class="section-content">
+                <h5>Achievement</h5>
+                <ol>
+                    <li>drawing</li>
+                    <li>dancer</li>
+                    </ol>
+            </div>
+        </section>
+        
+        <section id="skills">
+            <div class="section-content">
+                <h5>Skills</h5>
+                <ol>
+                    <li>python</li>
+                    <li>C,C++</li>
+                    </ol>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="section-content">
+                <h5>project</h5>
+                <li><a href="project1.png">project</a></li>
+            </div>
+        </section>
+        <section id="resume">
+            <center>
+                <div class="section-content">
+                    <h5>Resume</h5>
+                    <h5><a href="resume.png"class="download-button"> Download</5></a>
+                </div>
+            </center>
+        </section>
+
+        <footer>
+            <h5><p>&copy; HARINI A</p></h5>
+        </footer>
+
+        <script>
+            document.querySelectorAll('a[href^="#"]').forEach(anchor=>) {
+                anchor.addEventListener('click', fuction(e)) {
+                    e.preventDefault;
+
+                    const targetId=this.getAttribute('href').substring(1);
+                    const targetElement=document.getElmentById(targetId);
+
+                    if(targetElement) {
+                        window.scrollTo({
+                            top:targetElement.offsetTo,
+                            behavior:'smooth'
+                        });
+                    }                
+                });
+            });  
+        </script>
+    </body>
+</html>    
